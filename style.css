@@ -1,0 +1,233 @@
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*CSS Variables*/
+html{
+	scroll-behavior: smooth;
+}
+:root{
+	--navbar-height:59px;
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+	height:80px;
+}
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	z-index: -1;
+	opacity: 0.3;
+}
+#logo{
+	   margin: 10px 10px;
+}
+#logo img{
+	height: 40px;
+	margin:-11px 6px;
+}
+#navbar ul{
+	display: flex;
+	font-family: 'Slabo 27px', serif;
+}
+#navbar ul li{
+		list-style: none;
+	font-size: 1rem;
+
+}
+#navbar ul li a{
+	display: block;
+	text-decoration: none;
+	color:white;
+	padding: 3px 22px;
+	border-radius: 20px;
+}
+#navbar ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+
+
+/* Home Section*/
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 50px;
+	align-items: baseline;
+	justify-content: center;
+	height :417px;
+}
+#home::before{
+	content: "";
+	background:url(f1.jpg) no-repeat center center/cover;
+	position: absolute;
+	height:508px;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	z-index: -1;
+	opacity: 0.89;
+
+}
+#home h1{
+	color: white;
+	font-family: 'Architects Daughter', cursive;
+	text-align: left;
+}
+#home p{
+	color: white;
+	font-size: 1.2rem;
+	text-align: left;
+	font-family: 'Architects Daughter', cursive;
+
+}
+.primary{
+	font-family: 'Architects Daughter', cursive;
+
+	font-size: 2.8rem;
+	padding: 12px;
+}
+.btn{
+	padding: 6px 25px;
+	border:2px solid white;
+	background-color:#77AEE1 ;
+	color: white;
+	margin:17px;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+#service{
+	display: flex;
+}
+#Services>h1{
+	text-align: center;
+	margin-top: 5px;
+	font-size: 3rem;
+	font-family: 'Architects Daughter', cursive;
+}
+#Chilli{
+	font-size: 1.5rem;
+	text-align: center;font-family: 'Architects Daughter', cursive;
+}
+
+.box h2{padding: 20px;font-family: 'Architects Daughter', cursive;
+	font-size: 2rem;
+}
+#service .box{
+	border:2px solid brown;
+	padding:20px;
+	border-radius: 20px;
+	margin: 12px;
+	text-align: center;
+	background: #f2f2f2;
+}
+#service .box img{
+	margin: auto;
+	display: block;
+	height: 160px;
+}
+#service .box p{
+
+	font-family: 'Architects Daughter', cursive;
+}
+/*Client Section*/
+#client{
+	position: relative;
+}
+#client>h1{
+	text-align: center;
+	font-size: 3rem;
+	font-family: 'Architects Daughter', cursive;
+}
+.clientItem{padding: 4px;
+}
+.clientItem img{
+	 height:150px;
+width:200px;
+}
+#client::before{
+	content: "";
+	background:url(clientbg1.jpg) no-repeat center center/cover;
+	position: absolute;
+	height:100%;
+	width:100%;
+	z-index: -1;
+	opacity: 0.5;
+
+}
+#Clients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Contact Section*/
+#contact{
+	position:relative;
+}
+#contact::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+	background:url(bg2.jpg) no-repeat center center/cover;
+}
+#contact>h1{
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: 'Architects Daughter', cursive;
+}
+#Contact-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 34px;
+	flex-direction: column;
+}
+#Contact-box input,
+#Contact-box textarea{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1.1rem;
+}
+#Contact-box .form-box{
+	width: 30%;
+}
+#Contact-box .form-box label{
+	font-size: 1.3rem;
+	font-family:  'Architects Daughter', cursive
+}
+.bttn{
+	padding: 6px 25px;
+	border:2px solid white;
+	background-color:black ;
+	color: white;
+	margin:17px;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	margin:auto;
+	align-items: center;
+}
+
+footer{
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 9px 20px;
+}
